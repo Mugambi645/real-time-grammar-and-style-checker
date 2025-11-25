@@ -1,0 +1,6 @@
+fastapi
+uvicorn[standard]
+transformers        # Hugging Face library
+torch               # Required for the AI model
+python-dotenv       # For loading .env variables
+pydantic-settings   # For robust configuration management

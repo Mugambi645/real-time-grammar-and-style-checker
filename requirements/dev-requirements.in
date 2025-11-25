@@ -1,0 +1,5 @@
+-c requirements.txt # Constrain dev tools to match production versions
+pytest              # For running tests
+httpx               # Required by FastAPI TestClient
+black               # For code formatting
+ruff                # A faster linter (optional, but professional)
