@@ -1,4 +1,4 @@
-import type { Suggestion } from "../api/checker";
+import type { Suggestion } from '../api/checker';
 
 type Props = {
   suggestions: Suggestion[];
@@ -6,9 +6,8 @@ type Props = {
 };
 
 export const SuggestionsPanel = ({ suggestions, onApply }: Props) => {
-  if (suggestions.length === 0) {
+  if (suggestions.length === 0)
     return <p className="text-green-600 font-medium">No issues found!</p>;
-  }
 
   return (
     <div className="space-y-3">
@@ -22,7 +21,7 @@ export const SuggestionsPanel = ({ suggestions, onApply }: Props) => {
           {s.replacement && (
             <button
               onClick={() => onApply(s)}
-              className="fix-btn mt-2 text-primary-700 underline"
+              className="fix-btn mt-2"
             >
               Apply → "{s.replacement}"
             </button>
