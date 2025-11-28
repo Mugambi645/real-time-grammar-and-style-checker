@@ -1,3 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .editor { @apply w-full h-96 p-4 border border-gray-300 rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-primary-500; }
+  .suggestion { @apply bg-yellow-50 border-l-4 border-yellow-400 p-2 mb-2 rounded-r-lg; }
+  .fix-btn { @apply bg-primary-500 hover:bg-primary-600 text-white px-3 py-1 rounded text-sm transition-colors; }
+}
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
